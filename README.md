@@ -1,4 +1,3 @@
-
 hot_patch
 =========
 
@@ -26,7 +25,7 @@ Example
 
 Compile the following code with the hot_patch module (don't forget to define the
 DEBUG macro, with the -D option for example).
-`
+```c
 int main() {
 	int editable = _HP(int, 1);
 	while (editable) {
@@ -36,7 +35,7 @@ int main() {
 
 	return 0;
 }
-`
+```
 Run the resulting binary in a seperate window , and edit the '1' in the _HP
 macro by.. something else, and watch your app display "Editable:
 SOMETHING_ELSE".
